@@ -1,0 +1,55 @@
+{
+    "rows_count": 13706,
+    "features_count": 9,
+    "selection_metric": "f1_score",
+    "best_model_name": "xgboost",
+    "best_model_path": "C:\\Programing in Python by Ahmad Bhatti\\ML Projects\\Cheast disease prediction\\artifacts\\model_evaluation\\best_model.joblib",
+    "models_evaluated": 3,
+    "model_metrics": [
+        {
+            "model_name": "logistic_regression",
+            "model_path": "C:\\Programing in Python by Ahmad Bhatti\\ML Projects\\Cheast disease prediction\\artifacts\\model_training\\trained_models\\logistic_regression.joblib",
+            "accuracy": 0.7254,
+            "precision": 0.7497,
+            "recall": 0.6684,
+            "f1_score": 0.7067,
+            "roc_auc": 0.7873,
+            "confusion_matrix": {
+                "true_negative": 5407,
+                "false_positive": 1514,
+                "false_negative": 2250,
+                "true_positive": 4535
+            }
+        },
+        {
+            "model_name": "random_forest",
+            "model_path": "C:\\Programing in Python by Ahmad Bhatti\\ML Projects\\Cheast disease prediction\\artifacts\\model_training\\trained_models\\random_forest.joblib",
+            "accuracy": 0.7283,
+            "precision": 0.7476,
+            "recall": 0.6811,
+            "f1_score": 0.7128,
+            "roc_auc": 0.7955,
+            "confusion_matrix": {
+                "true_negative": 5361,
+                "false_positive": 1560,
+                "false_negative": 2164,
+                "true_positive": 4621
+            }
+        },
+        {
+            "model_name": "xgboost",
+            "model_path": "C:\\Programing in Python by Ahmad Bhatti\\ML Projects\\Cheast disease prediction\\artifacts\\model_training\\trained_models\\xgboost.joblib",
+            "accuracy": 0.7322,
+            "precision": 0.7486,
+            "recall": 0.6911,
+            "f1_score": 0.7187,
+            "roc_auc": 0.7977,
+            "confusion_matrix": {
+                "true_negative": 5346,
+                "false_positive": 1575,
+                "false_negative": 2096,
+                "true_positive": 4689
+            }
+        }
+    ]
+}

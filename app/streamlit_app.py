@@ -914,7 +914,7 @@ def main() -> None:
     st.sidebar.markdown("## Backend")
     api_base_url = st.sidebar.text_input(
         "FastAPI URL",
-        value="http://127.0.0.1:8000",
+        value="https://cardiorisk-ml-pipline.onrender.com",
         help="This is the API that handles prediction.",
     )
     render_backend_panel(api_base_url)

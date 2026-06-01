@@ -1,0 +1,31 @@
+{
+    "prediction_type": "single_patient",
+    "selected_features": [
+        "age_years",
+        "gender",
+        "ap_hi",
+        "ap_lo",
+        "cholesterol",
+        "gluc",
+        "active",
+        "bmi",
+        "pulse_pressure"
+    ],
+    "result": {
+        "prediction": 1,
+        "risk_label": "High Risk",
+        "probability": 0.6503,
+        "model_path": "C:\\Programing in Python by Ahmad Bhatti\\ML Projects\\Cheast disease prediction\\artifacts\\model_evaluation\\best_model.joblib",
+        "input_features": {
+            "age_years": 52,
+            "gender": 2,
+            "ap_hi": 135,
+            "ap_lo": 88,
+            "cholesterol": 2,
+            "gluc": 1,
+            "active": 1,
+            "bmi": 28.4,
+            "pulse_pressure": 47
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "train": {
+        "input_rows": 56000,
+        "duplicate_rows_removed": 0,
+        "missing_values_removed": 0,
+        "invalid_medical_rows_removed": 1188,
+        "output_rows": 54812
+    },
+    "test": {
+        "input_rows": 14000,
+        "duplicate_rows_removed": 0,
+        "missing_values_removed": 0,
+        "invalid_medical_rows_removed": 294,
+        "output_rows": 13706
+    },
+    "derived_features": [
+        "age_years",
+        "bmi",
+        "pulse_pressure"
+    ],
+    "selected_features": [
+        "age_years",
+        "gender",
+        "ap_hi",
+        "ap_lo",
+        "cholesterol",
+        "gluc",
+        "active",
+        "bmi",
+        "pulse_pressure"
+    ],
+    "features_count": 9
+}

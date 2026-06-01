@@ -1,0 +1,46 @@
+{
+    "rows_count": 54812,
+    "features_count": 9,
+    "cross_validation_folds": 3,
+    "tuning_scoring": "f1",
+    "models_trained": 3,
+    "trained_models": [
+        {
+            "model_name": "logistic_regression",
+            "model_path": "C:\\Programing in Python by Ahmad Bhatti\\ML Projects\\Cheast disease prediction\\artifacts\\model_training\\trained_models\\logistic_regression.joblib",
+            "training_time_seconds": 0.89,
+            "best_cv_score": 0.7075,
+            "best_params": {
+                "C": 0.5
+            }
+        },
+        {
+            "model_name": "random_forest",
+            "model_path": "C:\\Programing in Python by Ahmad Bhatti\\ML Projects\\Cheast disease prediction\\artifacts\\model_training\\trained_models\\random_forest.joblib",
+            "training_time_seconds": 463.53,
+            "best_cv_score": 0.7198,
+            "best_params": {
+                "max_depth": 12,
+                "max_features": "sqrt",
+                "min_samples_leaf": 2,
+                "min_samples_split": 8,
+                "n_estimators": 200
+            }
+        },
+        {
+            "model_name": "xgboost",
+            "model_path": "C:\\Programing in Python by Ahmad Bhatti\\ML Projects\\Cheast disease prediction\\artifacts\\model_training\\trained_models\\xgboost.joblib",
+            "training_time_seconds": 191.211,
+            "best_cv_score": 0.7211,
+            "best_params": {
+                "colsample_bytree": 0.8,
+                "learning_rate": 0.03,
+                "max_depth": 4,
+                "min_child_weight": 5,
+                "n_estimators": 300,
+                "reg_lambda": 1.0,
+                "subsample": 0.8
+            }
+        }
+    ]
+}

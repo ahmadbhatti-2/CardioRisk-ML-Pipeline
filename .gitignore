@@ -39,7 +39,5 @@ temp/
 mlruns/
 wandb/
 
-# Generated ML pipeline artifacts
-artifacts/
+# Data files (CSVs usually too big for GitHub, keeping this ignored)
 Data/*.csv
-
