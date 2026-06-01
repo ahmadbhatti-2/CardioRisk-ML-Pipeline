@@ -1,0 +1,16 @@
+# Core data processing
+pandas
+
+# Machine learning
+scikit-learn
+xgboost
+joblib
+
+# API service
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+
+# Web UI
+streamlit
