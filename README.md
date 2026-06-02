@@ -22,6 +22,25 @@ This project is structured like a real-world ML application: data processing, tr
 | Frontend | Streamlit |
 | Project control | Python CLI through `main.py` |
 
+## Live Deployment
+
+The project is deployed on Render with separate services for the API and UI.
+
+| Service | URL |
+| --- | --- |
+| Streamlit frontend | https://cardiorisk-ml-pipline-1.onrender.com |
+| FastAPI backend | https://cardiorisk-ml-pipline.onrender.com/ |
+| API health check | https://cardiorisk-ml-pipline.onrender.com/health |
+| API docs | https://cardiorisk-ml-pipline.onrender.com/docs |
+
+Open the Streamlit frontend, confirm the FastAPI URL is set to:
+
+```text
+https://cardiorisk-ml-pipline.onrender.com
+```
+
+Then submit the patient form to receive a live prediction from the deployed API.
+
 ## Architecture
 
 ```text
@@ -165,6 +184,12 @@ Open the API docs:
 http://127.0.0.1:8000/docs
 ```
 
+Live API docs:
+
+```text
+https://cardiorisk-ml-pipline.onrender.com/docs
+```
+
 Health endpoint:
 
 ```text
@@ -215,6 +240,16 @@ Invoke-RestMethod `
   -Body $body
 ```
 
+For the deployed API, use:
+
+```powershell
+Invoke-RestMethod `
+  -Uri "https://cardiorisk-ml-pipline.onrender.com/predict" `
+  -Method Post `
+  -ContentType "application/json" `
+  -Body $body
+```
+
 ## Streamlit App
 
 Start the Streamlit frontend:
@@ -227,6 +262,12 @@ Open:
 
 ```text
 http://localhost:8501
+```
+
+Live Streamlit app:
+
+```text
+https://cardiorisk-ml-pipline-1.onrender.com
 ```
 
 The Streamlit app collects patient input, sends it to the FastAPI backend, and displays the returned prediction, probability, BMI, and pulse pressure.
