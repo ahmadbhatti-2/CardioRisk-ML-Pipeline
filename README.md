@@ -321,6 +321,8 @@ The project trains three models and selects the best model using F1-score.
 | Random Forest | 0.7283 | 0.7476 | 0.6811 | 0.7128 | 0.7955 |
 | XGBoost | 0.7322 | 0.7486 | 0.6911 | 0.7187 | 0.7977 |
 
+These scores are moderate rather than high; XGBoost reaches an F1-score of about 0.71 and ROC-AUC of about 0.79, so the model should be treated as a learning/portfolio risk-screening demo rather than a production clinical diagnosis system.
+
 Best model:
 
 ```text
